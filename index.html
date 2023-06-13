@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a147a4a40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class ="container">
+        <nav>
+            <img src="images/LOGO.jpeg"class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="headertext">
+            <p>UI/UX Designer </p>
+            <h1>Hi, We are the <span>Axe</span><br> Gang Infinite of BSIT2C</h1>
+        </div>
+    </div>
+  </div>
+  <!-----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/US.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>A true friend is a companion who will be there for you no matter what. You can be 100% yourself around them with no judgement, and they'll love .</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web/App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Design Training at CSU Aparri</li>
+                        <li><span>2021 - 2022</span><br>First Year Student Designer</li>
+                        <li><span>2019 - 2021</span><br>Design Training</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>Senior High School at Lyceum of Aparri</li>
+                        <li><span>2018</span><br>Senior High School at Lyceum of Aparri</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Our web design services will carefully craft your website to ensure that it mirrors your brand and speaks to your target demographic while highlighting your unique selling points.</p>
+            <a href="#">Learn more</a>
+           </div> 
+           <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>We have achieved a successful completion of UI/UX enhancements. This has made our job a lot more productive.</p>
+            <a href="#">Learn more</a>
+           </div> 
+           <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>We offer mobile app design services to carve your mobile app by blending the right design trends for your business vertical, end-user needs and best user experience practices, ensuring a higher business revenue.</p>
+            <a href="#">Learn more</a>
+           </div> 
+        </div>
+    </div>
+</div>
+<!-------------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Our Work</h1>
+       <div class="work-list">
+        <div class="work">
+            <img src="images/socialmediaapp.jpeg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people in the world. Download it from play store.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/musicapp.jpeg">
+            <div class="layer">
+                <h3>Music App</h3>
+                <p>The app connects you to the talented people in the world. Download it from play store.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/shoppingapp.jpeg">
+            <div class="layer">
+                <h3>Online Shopping App</h3>
+                <p>The app connects you to the talented people in the world. Download it from play store.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>  
+       </div>
+       <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <he class="sub-title">Contact Us</he>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0928-000-0000</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/wps_office_inst.exe" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©  Made with <i class="fa-solid fa-heart"></i> by Erwin Martinez and the rest of AGi</p>
+    </div>
+</div>
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+
+</script>
+
+</body>
+</html>
